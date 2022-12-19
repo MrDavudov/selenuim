@@ -13,3 +13,9 @@ class LoginPageLocators():
     REG_Password = (By.CSS_SELECTOR, "#id_registration-password")
     REG_Password2 = (By.CSS_SELECTOR, "#id_registration-password2")
     REG_Btn = (By.CSS_SELECTOR, '.btn[value="Register"]')
+
+class CardPageLocators():
+    CARD_BtnAdd = (By.CSS_SELECTOR, '.btn[value="Добавить в корзину"]')
+    CARD_TitleProduct = (By.CSS_SELECTOR, 'div.col-sm-4 h3 a')
+    CARD_ShowCard = (By.CSS_SELECTOR, 'span.btn-group a')
+    
