@@ -1,7 +1,19 @@
 from selenium.webdriver.common.by import By
 
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
+class ProductPageLocators(object):
+    ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, '.btn-add-to-basket')
+    MESSAGE_AFTER_ADD_ITEM = (By.CSS_SELECTOR, '.alert-success:first-child .alertinner strong')
+    TITLE_OF_THE_ITEM = (By.CSS_SELECTOR, 'h1')
+    PRICE_ITEM = (By.CSS_SELECTOR, '.product_main .price_color')
+    BASKET_TOTAL = (By.CSS_SELECTOR, '.alert-info .alertinner strong')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '.alert-success:first-child')
 
 class LoginPageLocators():
     LOGIN_Url = "http://selenium1py.pythonanywhere.com/"
@@ -14,8 +26,7 @@ class LoginPageLocators():
     REG_Password2 = (By.CSS_SELECTOR, "#id_registration-password2")
     REG_Btn = (By.CSS_SELECTOR, '.btn[value="Register"]')
 
-class CardPageLocators():
-    CARD_BtnAdd = (By.CSS_SELECTOR, '.btn[value="Добавить в корзину"]')
-    CARD_TitleProduct = (By.CSS_SELECTOR, 'div.col-sm-4 h3 a')
-    CARD_ShowCard = (By.CSS_SELECTOR, 'span.btn-group a')
+class CardPageLocators(object):
+    BASKET_ITEMS = (By.CSS_SELECTOR, '.basket-items')
+    MESSAGE_IN_BASKET = (By.CSS_SELECTOR, '#content_inner')
     
