@@ -26,7 +26,7 @@ class LoginPageLocators():
     REG_Password2 = (By.CSS_SELECTOR, "#id_registration-password2")
     REG_Btn = (By.CSS_SELECTOR, '.btn[value="Register"]')
 
-class CardPageLocators(object):
+class CartPageLocators(object):
     BASKET_ITEMS = (By.CSS_SELECTOR, '.basket-items')
     MESSAGE_IN_BASKET = (By.CSS_SELECTOR, '#content_inner')
     
